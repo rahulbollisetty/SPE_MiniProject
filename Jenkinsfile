@@ -28,7 +28,7 @@ pipeline {
         stage('Push Docker Images') {
             steps {
                 script{
-                    docker.withRegistry('', 'DockerHubCred') {
+                    docker.withRegistry('', 'Docker_hub_cred') {
                     sh 'docker tag calculator_cpp spe/calculator_cpp:latest'
                     sh 'docker push spe/calculator_cpp'
                     }
