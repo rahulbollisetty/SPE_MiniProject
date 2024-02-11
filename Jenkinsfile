@@ -29,8 +29,8 @@ pipeline {
             steps {
                 script{
                     docker.withRegistry('', 'Docker_hub_cred') {
-                    sh 'docker tag calculator_cpp spe/calculator_cpp:latest'
-                    sh 'docker push spe/calculator_cpp'
+                    sh 'docker tag calculator_cpp rahulb2180/calculator_cpp:latest'
+                    sh 'docker push rahulb2180/calculator_cpp'
                     }
                  }
             }
