@@ -12,7 +12,7 @@ pipeline {
                 script {
                     // Checkout the code from the GitHub repository
                     git branch: 'main', url: "${GITHUB_REPO_URL}"
-                }dckr_pat_lBcp2HT3_wLkszrI6aHOrm-m7PU
+                }
             }
         }
 
@@ -36,7 +36,7 @@ pipeline {
             }
         }
 
-   stage('Run Ansible Playbook') {
+        stage('Run Ansible Playbook') {
             steps {
                 script {
                     ansiblePlaybook(
