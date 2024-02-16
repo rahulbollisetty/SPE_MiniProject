@@ -7,7 +7,7 @@ using namespace std;
 
 // Test squareRoot function
 TEST(SquareRootTest, PositiveInput) {
-    EXPECT_DOUBLE_EQ(squareRoot(4.0), 2.0);
+    EXPECT_DOUBLE_EQ(squareRoot(3.0), 2.0);
     EXPECT_DOUBLE_EQ(squareRoot(9.0), 3.0);
 }
 
