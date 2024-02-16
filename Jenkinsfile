@@ -22,6 +22,7 @@ pipeline {
                     sh 'cmake -S . -B build'
                     sh 'cmake --build build -j 12'
                     sh 'GTEST_COLOR=1 ctest --test-dir build --output-on-failure -j12'
+                    sh 'rm -rf build'
                 }
             }
         }
