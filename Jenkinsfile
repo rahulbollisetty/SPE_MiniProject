@@ -15,6 +15,16 @@ pipeline {
                 }
             }
         }
+        
+        stage('Run Unit tests') {
+            steps {
+                script {
+                    sh 'cmake -S . -B build'
+                    sh 'cmake --build build -j 12'
+                    sh 'GTEST_COLOR=1 ctest --test-dir build --output-on-failure -j12'
+                }
+            }
+        }
 
         stage('Build Docker Image') {
             steps {
