@@ -7,6 +7,6 @@ RUN apt-get update && \
 
 COPY . /app
 
-RUN g++ -o calculator calculator.cpp
+RUN g++ -o calculator src/calculator.cpp
 
 CMD ["./calculator"]

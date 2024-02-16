@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
-
 using namespace std;
+#include "functions.h"
 
 // Function prototypes
 double squareRoot(double x);
@@ -63,28 +63,4 @@ int main() {
     return 0;
 }
 
-// Function definitions
-double squareRoot(double x) {
-    return sqrt(x);
-}
 
-double factorial(int x) {
-    if (x < 0) {
-        return 0; // Undefined for negative integers
-    }
-    if (x == 0 || x == 1) {
-        return 1;
-    }
-    return x * factorial(x - 1);
-}
-
-double naturalLogarithm(double x) {
-    if (x <= 0) {
-        return 0; // Undefined for non-positive numbers
-    }
-    return log(x);
-}
-
-double powerFunction(double base, double exponent) {
-    return pow(base, exponent);
-}
