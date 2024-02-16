@@ -18,7 +18,7 @@ enable_testing()
 
 add_executable(
   calc_test
-  calc_test.cpp
+  tests/calc_test.cpp
 )
 target_link_libraries(
   calc_test
