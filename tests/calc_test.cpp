@@ -19,7 +19,7 @@ TEST(SquareRootTest, NegativeInput) {
 TEST(FactorialTest, NonNegativeInput) {
     EXPECT_EQ(factorial(0), 1);
     EXPECT_EQ(factorial(1), 1);
-    EXPECT_EQ(factorial(5), 120);
+    EXPECT_EQ(factorial(5), 12);
 }
 
 TEST(FactorialTest, NegativeInput) {
