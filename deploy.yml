@@ -6,7 +6,7 @@
   tasks:
     - name: Pull Docker Image
       docker_image:
-        name: "rahulb2180/calculator_cpp"
+        name: "rahulb2180/scientific-calculator"
         source: pull
       register: docker_pull_result
 
@@ -19,4 +19,4 @@
         name: docker
         state: started
     - name: Running container
-      shell: docker run -it -d --name calculator_cpp rahulb2180/calculator_cpp
+      shell: docker run -it -d --name Scientific_Calculator_cpp rahulb2180/scientific-calculator
